@@ -23,10 +23,10 @@ const myChart = async () => {
         let data1 = polygondata(data1raw.results);
         let data2 = polygondata(data2raw.results);
         console.log(data1, data2);
-        stockChart(data1.date, data1.hight, hightGraph, "Hight Price" );
+        stockChart(data1.date, data1.hight, hightGraph, "High Price" );
         stockChart(data1.date, data1.volume, volumeGraph, "Volumen Per Day" );
         stockChart(data1.date, data1.low, lowGraph, "Low Price" );
-        stockChart(data2.date, data2.hight, hightGraph2, "Hight Price 2" );
+        stockChart(data2.date, data2.hight, hightGraph2, "High Price 2" );
         stockChart(data2.date, data2.volume, volumeGraph2, "Volumen Per Day");
         stockChart(data2.date, data2.low, lowGraph2, "Low Price");
         //console.log(dataStock);
