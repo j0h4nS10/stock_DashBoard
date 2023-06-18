@@ -1,9 +1,9 @@
 import { apiStock,stockChart,polygondata } from './modules/utils.js';
 import {
-    hightGraph,
+    highGraph,
     volumeGraph,
     lowGraph,
-    hightGraph2,
+    highGraph2,
     volumeGraph2,
     lowGraph2,
     highGraph3,
@@ -30,10 +30,10 @@ const myChart = async () => {
         let data2 = polygondata(data2raw.results);
         let data3 = polygondata(data3raw.results);
         console.log(data1, data2, data3);
-        stockChart(data1.date, data1.hight, hightGraph, "High Price" );
+        stockChart(data1.date, data1.hight, highGraph, "High Price" );
         stockChart(data1.date, data1.volume, volumeGraph, "Volumen Per Day" );
         stockChart(data1.date, data1.low, lowGraph, "Low Price" );
-        stockChart(data2.date, data2.hight, hightGraph2, "High Price 2" );
+        stockChart(data2.date, data2.hight, highGraph2, "High Price 2" );
         stockChart(data2.date, data2.volume, volumeGraph2, "Volumen Per Day");
         stockChart(data2.date, data2.low, lowGraph2, "Low Price");
         stockChart(data3.date, data3.hight, highGraph3, "High Price 2" );
@@ -47,7 +47,7 @@ const myChart = async () => {
 }
 
 // default loading
-//myChart();
+myChart();
 
 viewDataBtn.addEventListener('click',myChart());
 
